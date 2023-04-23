@@ -6,7 +6,7 @@
 #    By: mtoof <mtoof@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/27 15:50:23 by mtoof             #+#    #+#              #
-#    Updated: 2023/04/03 16:41:23 by mtoof            ###   ########.fr        #
+#    Updated: 2023/04/23 08:48:21 by mtoof            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,10 +41,10 @@ FLAGS = -Wall -Werror -Wextra
 all: $(NAME)
 	
 $(NAME): $(OBJS)
-	ar rcs $@ $?
+	@ar rcs $@ $?
 
 $(OBJS): $(OBJ_DIR)%.o: %.c | obj_dir
-	cc $(FLAGS) -I$(HEADER) -c -o $@ $<
+	@cc $(FLAGS) -I$(HEADER) -c -o $@ $<
 
 # bonus: $(SRC_B:.c=.o)
 #$(SRC_B:.c=.o): $(SRC_B)	

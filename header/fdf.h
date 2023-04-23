@@ -3,19 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   fdf.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mtoof <mtoof@student.hive.fi>              +#+  +:+       +#+        */
+/*   By: sepehr <sepehr@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 16:55:17 by mtoof             #+#    #+#             */
-/*   Updated: 2023/03/29 17:52:08 by mtoof            ###   ########.fr       */
+/*   Updated: 2023/04/23 08:38:55 by sepehr           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FDF_H
 # define FDF_H
 
-# include "../get_next_line/get_next_line.h"
-# include "../libft/libft.h"
-# include "../minilibx_macos/mlx.h"
+# include "../libft/header/libft.h"
+# include <mlx.h>
 # include <fcntl.h>
 # include <math.h>
 # include <stdbool.h>
